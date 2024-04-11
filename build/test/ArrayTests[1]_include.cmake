@@ -1,5 +1,0 @@
-if(EXISTS "/Users/jlb1694/dev/gemini_code/dissertation/sigpro/build/test/ArrayTests[1]_tests.cmake")
-  include("/Users/jlb1694/dev/gemini_code/dissertation/sigpro/build/test/ArrayTests[1]_tests.cmake")
-else()
-  add_test(ArrayTests_NOT_BUILT ArrayTests_NOT_BUILT)
-endif()

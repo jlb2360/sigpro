@@ -1,5 +1,0 @@
-if(EXISTS "/Users/jlb1694/dev/gemini_code/dissertation/sigpro/build/test/runTests[1]_tests.cmake")
-  include("/Users/jlb1694/dev/gemini_code/dissertation/sigpro/build/test/runTests[1]_tests.cmake")
-else()
-  add_test(runTests_NOT_BUILT runTests_NOT_BUILT)
-endif()
