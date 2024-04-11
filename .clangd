@@ -1,0 +1,19 @@
+{
+  "compile-commands-dir": "build",
+  "index": {
+    "background": "all",
+    "threads": 4
+  },
+  "clang-tidy": {
+    "checks": "-*,modernize-*"
+  },
+  "completion": {
+    "detailedLabel": false,
+    "includeGlobals": true,
+    "includeSnippets": true,
+    "includeIneligibleResults": false,
+    "maxNumResults": 50
+  },
+  "fallback-style": "Google",
+  "completion-style": "clangd"
+}

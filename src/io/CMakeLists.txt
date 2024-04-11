@@ -1,0 +1,11 @@
+
+set(IO_SOURCES 
+  io.cpp
+)
+
+
+add_library(IOModule ${IO_SOURCES})
+
+get_property(SUB_LIBRARIES GLOBAL PROPERTY SUB_LIBRARIES)
+list(APPEND SUB_LIBRARIES IOModule)
+set_property(GLOBAL PROPERTY SUB_LIBRARIES ${SUB_LIBRARIES})

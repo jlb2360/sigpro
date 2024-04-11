@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/libFilterModule.a CMakeFiles/FilterModule.dir/filters.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/libFilterModule.a

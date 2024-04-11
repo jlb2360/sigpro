@@ -1,0 +1,11 @@
+
+set(FILTERING_SOURCES 
+  filters.cpp
+)
+
+
+add_library(FilterModule ${FILTERING_SOURCES})
+
+get_property(SUB_LIBRARIES GLOBAL PROPERTY SUB_LIBRARIES)
+list(APPEND SUB_LIBRARIES FilterModule)
+set_property(GLOBAL PROPERTY SUB_LIBRARIES ${SUB_LIBRARIES})
