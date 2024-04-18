@@ -1,8 +1,9 @@
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
+add_subdirectory(filtering)
 
-set(FILTERING_SOURCES 
+set(SIGNAL_SOURCES 
+  ${SIGNAL_SOURCES}
   ${FILTERING_SOURCES}
-  ${CMAKE_CURRENT_SOURCE_DIR}/filters.cpp
   PARENT_SCOPE
 )

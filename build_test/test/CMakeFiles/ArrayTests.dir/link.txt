@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/ArrayTests.dir/array_test.cpp.o -o ArrayTests  ../src/libsigpro.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 

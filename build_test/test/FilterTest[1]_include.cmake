@@ -1,0 +1,5 @@
+if(EXISTS "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test/FilterTest[1]_tests.cmake")
+  include("/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test/FilterTest[1]_tests.cmake")
+else()
+  add_test(FilterTest_NOT_BUILT FilterTest_NOT_BUILT)
+endif()

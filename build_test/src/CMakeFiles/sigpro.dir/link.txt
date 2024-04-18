@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsigpro.a CMakeFiles/sigpro.dir/array/array.cpp.o CMakeFiles/sigpro.dir/signal/filtering/filters.cpp.o
+/usr/bin/ranlib libsigpro.a

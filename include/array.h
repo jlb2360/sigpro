@@ -13,12 +13,17 @@ public:
 
   // operator overloads
   Array<T> operator*(const Array<T> &other) const;
+  Array<T> operator+(const Array<T> &other) const;
   Array<T> operator*(T other) const;
   Array<T> operator+(T other) const;
   Array<T> operator-(T other) const;
 
   void fill_arr();
   int length();
+  T max();
+  T min();
+  int argmax();
+  int argmin();
 
 private:
   int len;
@@ -28,5 +33,6 @@ private:
 
 extern template class sigpro::Array<int>;
 extern template class sigpro::Array<float>;
+extern template class sigpro::Array<double>;
 
 #endif // !ARRAY

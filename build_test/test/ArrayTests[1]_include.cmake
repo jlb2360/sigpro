@@ -1,0 +1,5 @@
+if(EXISTS "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test/ArrayTests[1]_tests.cmake")
+  include("/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test/ArrayTests[1]_tests.cmake")
+else()
+  add_test(ArrayTests_NOT_BUILT ArrayTests_NOT_BUILT)
+endif()

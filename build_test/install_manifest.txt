@@ -1,0 +1,3 @@
+/home/jlb1694/.local_personal/lib/libsigpro.a
+/home/jlb1694/.local_personal/include/sigpro/array.h
+/home/jlb1694/.local_personal/include/sigpro/filters.h

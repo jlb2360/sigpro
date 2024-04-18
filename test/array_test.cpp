@@ -11,6 +11,13 @@ sigpro::Array<int> initIntArr() {
   return int_arr;
 }
 
+sigpro::Array<int> initIntZeroArr() {
+
+  sigpro::Array<int> int_arr(5);
+
+  return int_arr;
+}
+
 sigpro::Array<float> initFloatArr() {
   float *arr = new float[5];
   for (int i = 0; i < 5; ++i) {
@@ -34,6 +41,19 @@ TEST(ArrayIntTest, InitTest) {
   ASSERT_EQ(int_arr.length(), 5);
 }
 
+TEST(ArrayIntTest, InitZeroTest) {
+  using namespace sigpro;
+
+  Array<int> int_arr = initIntZeroArr();
+
+  ASSERT_EQ(int_arr.arr[0], 0);
+  ASSERT_EQ(int_arr.arr[1], 0);
+  ASSERT_EQ(int_arr.arr[2], 0);
+  ASSERT_EQ(int_arr.arr[3], 0);
+  ASSERT_EQ(int_arr.arr[4], 0);
+  ASSERT_EQ(int_arr.length(), 5);
+}
+
 TEST(ArrayIntTest, DotProduct) {
   using namespace sigpro;
 
@@ -47,6 +67,21 @@ TEST(ArrayIntTest, DotProduct) {
   ASSERT_EQ(dot_arr.arr[2], 4);
   ASSERT_EQ(dot_arr.arr[3], 9);
   ASSERT_EQ(dot_arr.arr[4], 16);
+}
+
+TEST(ArrayIntTest, AddArray) {
+  using namespace sigpro;
+
+  Array<int> int_arr1 = initIntArr();
+  Array<int> int_arr2 = initIntArr();
+
+  Array<int> dot_arr = int_arr1 + int_arr2;
+
+  ASSERT_EQ(dot_arr.arr[0], 0);
+  ASSERT_EQ(dot_arr.arr[1], 2);
+  ASSERT_EQ(dot_arr.arr[2], 4);
+  ASSERT_EQ(dot_arr.arr[3], 6);
+  ASSERT_EQ(dot_arr.arr[4], 8);
 }
 
 TEST(ArrayIntTest, AddInt) {
@@ -117,6 +152,21 @@ TEST(ArrayFloatTest, DotProduct) {
   ASSERT_EQ(dot_arr.arr[2], 4.0);
   ASSERT_EQ(dot_arr.arr[3], 9.0);
   ASSERT_EQ(dot_arr.arr[4], 16.0);
+}
+
+TEST(ArrayFloatTest, AddArray) {
+  using namespace sigpro;
+
+  Array<float> int_arr1 = initFloatArr();
+  Array<float> int_arr2 = initFloatArr();
+
+  Array<float> dot_arr = int_arr1 + int_arr2;
+
+  ASSERT_EQ(dot_arr.arr[0], 0.0);
+  ASSERT_EQ(dot_arr.arr[1], 2.0);
+  ASSERT_EQ(dot_arr.arr[2], 4.0);
+  ASSERT_EQ(dot_arr.arr[3], 6.0);
+  ASSERT_EQ(dot_arr.arr[4], 8.0);
 }
 
 TEST(ArrayFloatTest, AddFloat) {

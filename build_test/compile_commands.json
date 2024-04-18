@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/src",
+  "command": "/usr/bin/c++  -I/home/jlb1694/dev/ge-mini/dissertation/sigpro/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/sigpro.dir/array/array.cpp.o -c /home/jlb1694/dev/ge-mini/dissertation/sigpro/src/array/array.cpp",
+  "file": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/src/array/array.cpp"
+},
+{
+  "directory": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/src",
+  "command": "/usr/bin/c++  -I/home/jlb1694/dev/ge-mini/dissertation/sigpro/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/sigpro.dir/signal/filtering/filters.cpp.o -c /home/jlb1694/dev/ge-mini/dissertation/sigpro/src/signal/filtering/filters.cpp",
+  "file": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/src/signal/filtering/filters.cpp"
+},
+{
+  "directory": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test",
+  "command": "/usr/bin/c++  -I/home/jlb1694/dev/ge-mini/dissertation/sigpro/include -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -std=gnu++17 -o CMakeFiles/ArrayTests.dir/array_test.cpp.o -c /home/jlb1694/dev/ge-mini/dissertation/sigpro/test/array_test.cpp",
+  "file": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/test/array_test.cpp"
+},
+{
+  "directory": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/build_test/test",
+  "command": "/usr/bin/c++  -I/home/jlb1694/dev/ge-mini/dissertation/sigpro/include -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -std=gnu++17 -o CMakeFiles/FilterTest.dir/filtering_test.cpp.o -c /home/jlb1694/dev/ge-mini/dissertation/sigpro/test/filtering_test.cpp",
+  "file": "/home/jlb1694/dev/ge-mini/dissertation/sigpro/test/filtering_test.cpp"
+}
+]
